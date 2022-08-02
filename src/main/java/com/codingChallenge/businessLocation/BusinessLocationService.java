@@ -44,7 +44,6 @@ public class BusinessLocationService {
     }
 
     public BusinessLocation getLocationData(String locationId) {
-        System.out.println("locationId " + locationId);
 
         String name = "";
         String shortName = "";
@@ -52,7 +51,7 @@ public class BusinessLocationService {
 
         for (String[] line : allData) {
 
-            if (line[1].toLowerCase().equals(locationId.toLowerCase())) {
+            if (line[1].equalsIgnoreCase(locationId)) {
                 name = line[2];
                 shortName = line[3];
                 shortType = line[4];
