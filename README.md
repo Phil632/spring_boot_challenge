@@ -6,11 +6,11 @@ This project was created as solution to a coding challenge. It provides a simple
 
 To run the provided tests, run
 
-### `mvnw test`
+### `./mvnw test`
 
 To start the API run
 
-### `mvnw spring-boot:run`
+### `./mvnw spring-boot:run`
 
 Now you can send get requests to 
 
